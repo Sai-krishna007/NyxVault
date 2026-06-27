@@ -1,0 +1,19 @@
+# Dependency directories
+nyxvault/node_modules/
+nyxvault-backend/venv/
+nyxvault-backend/__pycache__/
+nyxvault-backend/*/__pycache__/
+nyxvault-backend/instance/
+nyxvault-backend/uploads/
+
+# SQLite databases
+*.db
+nyxvault-backend/instance/*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/

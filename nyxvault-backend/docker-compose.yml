@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: nyxvault-backend/Dockerfile
+    restart: always
+    environment:
+      - FLASK_ENV=production
+      - PORT=3000
+      - JWT_SECRET=nyxvault_super_secure_jwt_secret_2026
+      - GOOGLE_CLIENT_ID=
+      - VIRUSTOTAL_API_KEY=
+    expose:
+      - "3000"
+    volumes:
+      - web-data:/app/backend/instance
+      - web-uploads:/app/backend/uploads
+
+  proxy:
+    image: nginx:alpine
+    restart: always
+    ports:
+      - "8081:80"
+      - "4433:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - certs-data:/etc/nginx/certs
+    entrypoint: |
+      /bin/sh -c "
+      if [ ! -f /etc/nginx/certs/nyxvault.crt ]; then
+        echo 'Installing openssl and generating self-signed SSL certificates for HTTPS...' &&
+        apk add --no-cache openssl &&
+        mkdir -p /etc/nginx/certs &&
+        openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/certs/nyxvault.key -out /etc/nginx/certs/nyxvault.crt -subj '/C=US/ST=State/L=City/O=NyxVault/CN=localhost' &&
+        echo 'SSL Certificates generated successfully.';
+      fi &&
+      exec nginx -g 'daemon off;'
+      "
+    depends_on:
+      - web
+
+volumes:
+  web-data:
+  web-uploads:
+  certs-data:

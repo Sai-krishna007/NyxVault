@@ -1,0 +1,775 @@
+{
+  "users": [
+    {
+      "id": "usr-iufxty",
+      "name": "Dev User",
+      "email": "dev.test@nyxvault.io",
+      "passwordHash": "$2a$10$t9EBOfvBoz43RoellS0Yp./J7yOdrIt09ZLf1QrkYFqnE3cxu.oUq",
+      "role": "Developer",
+      "avatar": "DU",
+      "plan": "Professional",
+      "mfa": true,
+      "joined": "Jun 24, 2026",
+      "status": "active",
+      "color": "#4eacaa"
+    },
+    {
+      "id": "usr-77eysg",
+      "name": "k krishnareddy",
+      "email": "saikrishnareddy9663@gmail.com",
+      "passwordHash": "$2a$10$CQwK6OO7EZy.1lECIQexxeyhPFxyHWKt3L7cVQkqSfkUYI4BOuzaK",
+      "role": "Developer",
+      "avatar": "KK",
+      "plan": "Professional",
+      "mfa": true,
+      "joined": "Jun 24, 2026",
+      "status": "active",
+      "color": "#f11250"
+    },
+    {
+      "id": "usr-001",
+      "name": "Alex Ryder",
+      "email": "alex.ryder@nyxvault.io",
+      "passwordHash": "$2a$10$LZtM0KpEUpCdpbMvT29CWOqp8RDTUCFdPXzbvIo4rotgCmRLK4VqG",
+      "role": "Admin",
+      "avatar": "AR",
+      "plan": "Enterprise",
+      "mfa": true,
+      "joined": "Jan 12, 2024",
+      "status": "active",
+      "color": "#00d4ff"
+    },
+    {
+      "id": "usr-002",
+      "name": "Jordan Torres",
+      "email": "j.torres@corp.io",
+      "passwordHash": "$2a$10$LZtM0KpEUpCdpbMvT29CWOqp8RDTUCFdPXzbvIo4rotgCmRLK4VqG",
+      "role": "Manager",
+      "avatar": "JT",
+      "plan": "Professional",
+      "mfa": true,
+      "joined": "Feb 15, 2024",
+      "status": "active",
+      "color": "#7b2fff"
+    },
+    {
+      "id": "usr-003",
+      "name": "Ming Chen",
+      "email": "m.chen@corp.io",
+      "passwordHash": "$2a$10$LZtM0KpEUpCdpbMvT29CWOqp8RDTUCFdPXzbvIo4rotgCmRLK4VqG",
+      "role": "Analyst",
+      "avatar": "MC",
+      "plan": "Professional",
+      "mfa": false,
+      "joined": "Mar 1, 2024",
+      "status": "flagged",
+      "color": "#ff3366"
+    },
+    {
+      "id": "usr-004",
+      "name": "Saanvi Patel",
+      "email": "s.patel@corp.io",
+      "passwordHash": "$2a$10$LZtM0KpEUpCdpbMvT29CWOqp8RDTUCFdPXzbvIo4rotgCmRLK4VqG",
+      "role": "Developer",
+      "avatar": "SP",
+      "plan": "Professional",
+      "mfa": true,
+      "joined": "Mar 18, 2024",
+      "status": "active",
+      "color": "#00ff88"
+    },
+    {
+      "id": "usr-005",
+      "name": "Kim Morgan",
+      "email": "k.morgan@corp.io",
+      "passwordHash": "$2a$10$LZtM0KpEUpCdpbMvT29CWOqp8RDTUCFdPXzbvIo4rotgCmRLK4VqG",
+      "role": "Viewer",
+      "avatar": "KM",
+      "plan": "Starter",
+      "mfa": false,
+      "joined": "Apr 20, 2024",
+      "status": "inactive",
+      "color": "#ffaa00"
+    },
+    {
+      "id": "usr-006",
+      "name": "Reza Ahmadi",
+      "email": "r.ahmadi@corp.io",
+      "passwordHash": "$2a$10$LZtM0KpEUpCdpbMvT29CWOqp8RDTUCFdPXzbvIo4rotgCmRLK4VqG",
+      "role": "Developer",
+      "avatar": "RA",
+      "plan": "Professional",
+      "mfa": true,
+      "joined": "May 5, 2024",
+      "status": "active",
+      "color": "#1a6fff"
+    }
+  ],
+  "files": [
+    {
+      "id": "fil-c8fcwimo3",
+      "userId": "usr-001",
+      "name": "plain.txt",
+      "type": "txt",
+      "size": 80,
+      "path": "fil-c8fcwimo3.txt",
+      "hash": "2ebeab4273d0966266529d5d4da6e714780258bc15be2f989735599367d6f2d5",
+      "originalHash": "2ebeab4273d0966266529d5d4da6e714780258bc15be2f989735599367d6f2d5",
+      "encrypted": false,
+      "status": "verified",
+      "modified": "2026-06-24T14:50:50.215Z",
+      "folder": "Documents"
+    },
+    {
+      "id": "fil-001",
+      "userId": "usr-001",
+      "name": "Q4_Financial_Report_2025.pdf",
+      "type": "pdf",
+      "size": 2516582,
+      "path": "fil-001.pdf",
+      "hash": "b689edc3566118cd083befb0b7c877e5a84831ac953ab1522381df61b8078343",
+      "originalHash": "a3f8e221a8b3d68ef21d3f96bb7cf528de7ca1f97a5b3a1d91c045b8fb9d3004",
+      "encrypted": true,
+      "modified": "2026-06-24T12:04:00.000Z",
+      "folder": "Documents",
+      "status": "tampered"
+    },
+    {
+      "id": "fil-002",
+      "userId": "usr-001",
+      "name": "project_blueprint_v3.docx",
+      "type": "doc",
+      "size": 1153433,
+      "path": "fil-002.docx",
+      "hash": "d691ac1b65dcdb847826a24c2b91ddbdf6d1070ce4ea9f72a8299f9e35db5065",
+      "originalHash": "9d3710bbf8a5d629ea18fc8364cc918debc8f2a1b5c2a1d9bb97f3b8fc9d4002",
+      "encrypted": true,
+      "modified": "2026-06-24T11:46:00.000Z",
+      "folder": "Documents",
+      "status": "tampered"
+    },
+    {
+      "id": "fil-003",
+      "userId": "usr-001",
+      "name": "server_backups.tar.gz",
+      "type": "zip",
+      "size": 933257216,
+      "path": "fil-003.zip",
+      "hash": "981a5c8b7103183f314c6208393fcf3d58b6e4539039d300f1d5caa6a136b9de",
+      "originalHash": "e501dab1c8b3d68ef21d3f96bb7cf528de7ca1f97a5b3a1d91c045b8fb9d3004",
+      "encrypted": true,
+      "modified": "2026-06-24T10:23:00.000Z",
+      "folder": "Archives",
+      "status": "tampered"
+    },
+    {
+      "id": "fil-004",
+      "userId": "usr-001",
+      "name": "infra_diagram_v2.png",
+      "type": "img",
+      "size": 4404019,
+      "path": "fil-004.png",
+      "hash": "3c26eba54efa41c6df32b644ccdd8d6c98cffd4bae525b38767ec85bca5a2b52",
+      "originalHash": "2c89fb21a8b3d68ef21d3f96bb7cf528de7ca1f97a5b3a1d881102b8fb9d3004",
+      "encrypted": false,
+      "modified": "2026-06-23T18:34:00.000Z",
+      "folder": "Images",
+      "status": "tampered"
+    },
+    {
+      "id": "fil-005",
+      "userId": "usr-001",
+      "name": "vault_keys_2025.key",
+      "type": "key",
+      "size": 12288,
+      "path": "fil-005.key",
+      "hash": "5365a8df32721626b675b9da7210cbfdcd4718042ddf25ffb3ed52cbb1cca096",
+      "originalHash": "7bc432a1f9deb83f96bb7cf528de7ca1f97a5b3a1d1234567881c22b8fb9d3004",
+      "encrypted": true,
+      "modified": "2026-06-23T09:15:00.000Z",
+      "folder": "Keys & Certs",
+      "status": "tampered"
+    },
+    {
+      "id": "fil-006",
+      "userId": "usr-001",
+      "name": "api_codebase.zip",
+      "type": "code",
+      "size": 35651584,
+      "path": "fil-006.zip",
+      "hash": "d392fc5d6b590e12b4308568434afcd6a6d6fff5987709cef2a93be0ca323df6",
+      "originalHash": "f04c7a21a8b3d68ef21d3f96bb7cf528de7ca1f97a5b3a1de220ddb8fb9d3004",
+      "encrypted": true,
+      "modified": "2026-06-22T14:50:00.000Z",
+      "folder": "Code",
+      "status": "tampered"
+    },
+    {
+      "id": "fil-007",
+      "userId": "usr-001",
+      "name": "employee_roster_2026.xlsx",
+      "type": "doc",
+      "size": 573440,
+      "path": "fil-007.xlsx",
+      "hash": "8e56857660849427308332aef8f303843e3eec3c7262f0e507353027d6b4b001",
+      "originalHash": "d57344a1a8b3d68ef21d3f96bb7cf528de7ca1f97a5b3a1de220ddb8fb9d3004",
+      "encrypted": true,
+      "modified": "2026-06-21T11:30:00.000Z",
+      "folder": "Documents",
+      "status": "tampered"
+    },
+    {
+      "id": "fil-008",
+      "userId": "usr-001",
+      "name": "compliance_report.pdf",
+      "type": "pdf",
+      "size": 3250585,
+      "path": "fil-008.pdf",
+      "hash": "10df2b4ae749c7c25e38753817c72acc3202ec323048ef6d5b47c8be29079b63",
+      "originalHash": "c32505a1a8b3d68ef21d3f96bb7cf528de7ca1f97a5b3a1de220ddb8fb9d3004",
+      "encrypted": true,
+      "modified": "2026-06-20T09:00:00.000Z",
+      "folder": "Documents",
+      "status": "tampered"
+    }
+  ],
+  "shares": [
+    {
+      "id": "SL-0052",
+      "userId": "usr-001",
+      "fileId": "fil-001",
+      "file": "Q4_Financial_Report_2025.pdf",
+      "recipients": [
+        "sarah@partner.io",
+        "board@corp.io"
+      ],
+      "expiry": "2026-07-10",
+      "views": 12,
+      "dl": 3,
+      "status": "active"
+    },
+    {
+      "id": "SL-0051",
+      "userId": "usr-001",
+      "fileId": "fil-002",
+      "file": "project_blueprint_v3.docx",
+      "recipients": [
+        "dev-team@acme.com"
+      ],
+      "expiry": "2026-06-28",
+      "views": 47,
+      "dl": 11,
+      "status": "active"
+    },
+    {
+      "id": "SL-0050",
+      "userId": "usr-001",
+      "fileId": "fil-004",
+      "file": "infra_diagram_v2.png",
+      "recipients": [
+        "ops@nyxvault.io"
+      ],
+      "expiry": "2026-06-24",
+      "views": 8,
+      "dl": 2,
+      "status": "expiring"
+    },
+    {
+      "id": "SL-0049",
+      "userId": "usr-001",
+      "fileId": "fil-006",
+      "file": "api_codebase.zip",
+      "recipients": [
+        "external@vendor.io"
+      ],
+      "expiry": "2026-06-15",
+      "views": 33,
+      "dl": 7,
+      "status": "expired"
+    },
+    {
+      "id": "SL-0048",
+      "userId": "usr-001",
+      "fileId": "fil-003",
+      "file": "server_backups.tar.gz",
+      "recipients": [
+        "backup@sre.io"
+      ],
+      "expiry": "2026-07-30",
+      "views": 1,
+      "dl": 1,
+      "status": "active"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-497",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on compliance_report.pdf — expected c32505a1a8... but computed 10df2b4ae7... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.276Z"
+    },
+    {
+      "id": "ALT-973",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on employee_roster_2026.xlsx — expected d57344a1a8... but computed 8e56857660... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.264Z"
+    },
+    {
+      "id": "ALT-118",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on api_codebase.zip — expected f04c7a21a8... but computed d392fc5d6b... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.250Z"
+    },
+    {
+      "id": "ALT-767",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on vault_keys_2025.key — expected 7bc432a1f9... but computed 5365a8df32... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.240Z"
+    },
+    {
+      "id": "ALT-510",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on infra_diagram_v2.png — expected 2c89fb21a8... but computed 3c26eba54e... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.230Z"
+    },
+    {
+      "id": "ALT-832",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on server_backups.tar.gz — expected e501dab1c8... but computed 981a5c8b71... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.215Z"
+    },
+    {
+      "id": "ALT-394",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on project_blueprint_v3.docx — expected 9d3710bbf8... but computed d691ac1b65... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.204Z"
+    },
+    {
+      "id": "ALT-584",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on Q4_Financial_Report_2025.pdf — expected a3f8e221a8... but computed b689edc356... possible tampering",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T14:46:04.193Z"
+    },
+    {
+      "id": "ALT-548",
+      "userId": "system",
+      "sev": "medium",
+      "title": "Failed Login Attempt",
+      "desc": "Unauthorized access attempt on account alex.ryder@nyxvault.io from IP ::1",
+      "time": "Just now",
+      "status": "active",
+      "timestamp": "2026-06-24T07:08:34.907Z"
+    },
+    {
+      "id": "ALT-001",
+      "userId": "usr-001",
+      "sev": "critical",
+      "title": "Unauthorized Access Attempt",
+      "desc": "Multiple failed login attempts from IP 185.220.101.34 (TOR exit node)",
+      "time": "4 min ago",
+      "status": "active",
+      "timestamp": "2026-06-24T07:04:34.525Z"
+    },
+    {
+      "id": "ALT-002",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "File Integrity Violation Detected",
+      "desc": "SHA-256 hash mismatch on vault_keys_2025.key — possible tampering",
+      "time": "31 min ago",
+      "status": "active",
+      "timestamp": "2026-06-24T06:37:34.525Z"
+    },
+    {
+      "id": "ALT-003",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "Anomalous Download Pattern",
+      "desc": "User jdoe@acme.com downloaded 847 files in under 10 minutes",
+      "time": "1h ago",
+      "status": "reviewing",
+      "timestamp": "2026-06-24T06:08:34.525Z"
+    },
+    {
+      "id": "ALT-004",
+      "userId": "usr-001",
+      "sev": "medium",
+      "title": "Expired Share Link Still Accessed",
+      "desc": "Share link SL-0042 was accessed 6 hours after expiry from two IPs",
+      "time": "2h ago",
+      "status": "resolved",
+      "timestamp": "2026-06-24T05:08:34.525Z"
+    },
+    {
+      "id": "ALT-005",
+      "userId": "usr-001",
+      "sev": "medium",
+      "title": "Geolocation Anomaly",
+      "desc": "User account accessed from Russia — usual location is United States",
+      "time": "4h ago",
+      "status": "active",
+      "timestamp": "2026-06-24T03:08:34.525Z"
+    },
+    {
+      "id": "ALT-006",
+      "userId": "usr-001",
+      "sev": "low",
+      "title": "New Device Login",
+      "desc": "Account alex.ryder@nyxvault.io logged in from macOS 15 / Safari",
+      "time": "6h ago",
+      "status": "resolved",
+      "timestamp": "2026-06-24T01:08:34.525Z"
+    },
+    {
+      "id": "ALT-007",
+      "userId": "usr-001",
+      "sev": "critical",
+      "title": "Malware Signature Detected",
+      "desc": "Uploaded file \"update_patch.exe\" matched known ransomware signature",
+      "time": "8h ago",
+      "status": "blocked",
+      "timestamp": "2026-06-23T23:08:34.525Z"
+    },
+    {
+      "id": "ALT-008",
+      "userId": "usr-001",
+      "sev": "high",
+      "title": "Admin Privilege Escalation",
+      "desc": "User m.chen@corp.io attempted to escalate to admin role without approval",
+      "time": "12h ago",
+      "status": "blocked",
+      "timestamp": "2026-06-23T19:08:34.525Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "LOG-2376",
+      "userId": "usr-001",
+      "user": "alex.ryder",
+      "action": "FILE_UPLOAD",
+      "resource": "plain.txt",
+      "ip": "::1",
+      "time": "Today 20:20",
+      "status": "success",
+      "timestamp": "2026-06-24T14:50:50.218Z"
+    },
+    {
+      "id": "LOG-1534",
+      "userId": "usr-001",
+      "user": "alex.ryder",
+      "action": "SETTINGS_EDIT",
+      "resource": "Session Login",
+      "ip": "::1",
+      "time": "Today 20:20",
+      "status": "success",
+      "timestamp": "2026-06-24T14:50:50.179Z"
+    },
+    {
+      "id": "LOG-7795",
+      "userId": "usr-iufxty",
+      "user": "dev.test",
+      "action": "USER_CREATE",
+      "resource": "dev.test@nyxvault.io",
+      "ip": "::1",
+      "time": "Today 20:16",
+      "status": "success",
+      "timestamp": "2026-06-24T14:46:04.594Z"
+    },
+    {
+      "id": "LOG-4243",
+      "userId": "usr-001",
+      "user": "alex.ryder",
+      "action": "INTEGRITY_SCAN",
+      "resource": "Vault Root",
+      "ip": "::1",
+      "time": "Today 20:16",
+      "status": "success",
+      "timestamp": "2026-06-24T14:46:04.282Z"
+    },
+    {
+      "id": "LOG-4941",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-497",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.279Z"
+    },
+    {
+      "id": "LOG-5922",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-973",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.267Z"
+    },
+    {
+      "id": "LOG-6203",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-118",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.253Z"
+    },
+    {
+      "id": "LOG-3542",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-767",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.243Z"
+    },
+    {
+      "id": "LOG-4807",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-510",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.232Z"
+    },
+    {
+      "id": "LOG-3652",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-832",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.221Z"
+    },
+    {
+      "id": "LOG-5854",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-394",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.208Z"
+    },
+    {
+      "id": "LOG-2593",
+      "userId": "system",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-584",
+      "ip": "internal",
+      "time": "Today 20:16",
+      "status": "warning",
+      "timestamp": "2026-06-24T14:46:04.196Z"
+    },
+    {
+      "id": "LOG-7667",
+      "userId": "usr-001",
+      "user": "alex.ryder",
+      "action": "SETTINGS_EDIT",
+      "resource": "Session Login",
+      "ip": "::1",
+      "time": "Today 20:16",
+      "status": "success",
+      "timestamp": "2026-06-24T14:46:04.120Z"
+    },
+    {
+      "id": "LOG-4663",
+      "userId": "usr-77eysg",
+      "user": "saikrishnareddy9663",
+      "action": "USER_CREATE",
+      "resource": "saikrishnareddy9663@gmail.com",
+      "ip": "::1",
+      "time": "Today 12:39",
+      "status": "success",
+      "timestamp": "2026-06-24T07:09:02.734Z"
+    },
+    {
+      "id": "LOG-7380",
+      "userId": "unknown",
+      "user": "alex.ryder",
+      "action": "LOGIN_FAIL",
+      "resource": "auth.nyxvault.io",
+      "ip": "::1",
+      "time": "Today 12:38",
+      "status": "blocked",
+      "timestamp": "2026-06-24T07:08:34.904Z"
+    },
+    {
+      "id": "LOG-5291",
+      "userId": "usr-001",
+      "user": "alex.ryder",
+      "action": "FILE_DOWNLOAD",
+      "resource": "Q4_Financial_Report_2025.pdf",
+      "ip": "203.0.113.42",
+      "time": "Today 12:04",
+      "status": "success",
+      "timestamp": "2026-06-24T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5290",
+      "userId": "usr-001",
+      "user": "j.torres",
+      "action": "FILE_SHARE",
+      "resource": "project_blueprint_v3.docx",
+      "ip": "198.51.100.7",
+      "time": "Today 11:58",
+      "status": "success",
+      "timestamp": "2026-06-24T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5289",
+      "userId": "usr-001",
+      "user": "m.chen",
+      "action": "PRIVILEGE_ESC",
+      "resource": "Admin Panel",
+      "ip": "192.168.1.52",
+      "time": "Today 11:32",
+      "status": "blocked",
+      "timestamp": "2026-06-24T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5288",
+      "userId": "usr-001",
+      "user": "s.patel",
+      "action": "FILE_DELETE",
+      "resource": "legacy_keys_2022.key",
+      "ip": "10.0.0.24",
+      "time": "Today 11:15",
+      "status": "success",
+      "timestamp": "2026-06-24T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5287",
+      "userId": "usr-001",
+      "user": "alex.ryder",
+      "action": "USER_CREATE",
+      "resource": "k.morgan@corp.io",
+      "ip": "203.0.113.42",
+      "time": "Today 10:50",
+      "status": "success",
+      "timestamp": "2026-06-24T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5286",
+      "userId": "usr-001",
+      "user": "system",
+      "action": "INTEGRITY_SCAN",
+      "resource": "Vault Root",
+      "ip": "internal",
+      "time": "Today 10:00",
+      "status": "success",
+      "timestamp": "2026-06-24T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5285",
+      "userId": "usr-001",
+      "user": "j.torres",
+      "action": "FILE_UPLOAD",
+      "resource": "server_backups.tar.gz",
+      "ip": "198.51.100.7",
+      "time": "Yesterday 23:41",
+      "status": "success",
+      "timestamp": "2026-06-23T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5284",
+      "userId": "usr-001",
+      "user": "unknown",
+      "action": "LOGIN_FAIL",
+      "resource": "auth.nyxvault.io",
+      "ip": "185.220.101.34",
+      "time": "Yesterday 22:55",
+      "status": "blocked",
+      "timestamp": "2026-06-23T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5283",
+      "userId": "usr-001",
+      "user": "s.patel",
+      "action": "SHARE_REVOKE",
+      "resource": "SL-0038",
+      "ip": "10.0.0.24",
+      "time": "Yesterday 21:10",
+      "status": "success",
+      "timestamp": "2026-06-23T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5282",
+      "userId": "usr-001",
+      "user": "m.chen",
+      "action": "FILE_UPLOAD",
+      "resource": "infra_diagram.png",
+      "ip": "192.168.1.52",
+      "time": "Yesterday 18:34",
+      "status": "success",
+      "timestamp": "2026-06-23T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5281",
+      "userId": "usr-001",
+      "user": "alex.ryder",
+      "action": "SETTINGS_EDIT",
+      "resource": "Vault Security Config",
+      "ip": "203.0.113.42",
+      "time": "Yesterday 16:22",
+      "status": "success",
+      "timestamp": "2026-06-23T07:08:34.526Z"
+    },
+    {
+      "id": "LOG-5280",
+      "userId": "usr-001",
+      "user": "system",
+      "action": "ALERT_TRIGGER",
+      "resource": "ALT-007",
+      "ip": "internal",
+      "time": "Yesterday 14:05",
+      "status": "warning",
+      "timestamp": "2026-06-23T07:08:34.526Z"
+    }
+  ]
+}

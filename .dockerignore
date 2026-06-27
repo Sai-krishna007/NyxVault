@@ -1,0 +1,9 @@
+nyxvault/node_modules
+nyxvault-backend/venv
+nyxvault-backend/__pycache__
+nyxvault-backend/uploads
+nyxvault-backend/instance
+nyxvault-ui
+nyxvault.db
+.git
+.gitignore

@@ -1,0 +1,48 @@
+name: NyxVault CI/CD Security Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install backend dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r nyxvault-backend/requirements.txt
+        pip install flake8 pytest
+
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 nyxvault-backend/ --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings.
+        flake8 nyxvault-backend/ --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Initialize sqlite database
+      run: |
+        cd nyxvault-backend
+        python -c "from database.db import db; from app import create_app; app = create_app(); db.create_all(app=app)"
+
+    - name: Run verification scripts
+      run: |
+        cd nyxvault-backend
+        # Run local verification scripts to assert database setup, sharing and integrity checks
+        python verify_integrity.py
+
+    - name: Build Docker Image
+      run: |
+        docker build -f nyxvault-backend/Dockerfile -t nyxvault:latest .
