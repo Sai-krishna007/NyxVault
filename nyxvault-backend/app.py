@@ -21,6 +21,23 @@ def create_app(config_class=Config):
     # Database migration: ensure 'watermark' column exists in 'users' table
     with app.app_context():
         try:
+            # Auto-create tables if they do not exist
+            from models.user import User
+            from models.file import File
+            from models.share import Share
+            from models.alert import Alert
+            from models.audit_log import AuditLog
+            from models.integrity_report import IntegrityReport
+            from models.hash_event import HashEvent
+            from models.api_key import ApiKey
+            db.create_all()
+
+            # Auto-seed if database is empty
+            if not User.query.first():
+                print("Database is empty. Running self-healing auto-seed...")
+                from manage_db import perform_seeding
+                perform_seeding(app)
+
             import sqlite3
             db_uri = app.config.get('SQLALCHEMY_DATABASE_URI', 'sqlite:///nyxvault.db')
             if db_uri.startswith('sqlite:///'):

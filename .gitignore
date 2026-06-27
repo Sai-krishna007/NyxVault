@@ -17,3 +17,7 @@ Thumbs.db
 # IDEs
 .vscode/
 .idea/
+
+# Environment and secrets
+nyxvault-backend/.env
+nyxvault-backend/credentials.json

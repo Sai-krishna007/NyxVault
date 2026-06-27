@@ -19,7 +19,10 @@ def seed_database():
         print("Initializing database tables...")
         db.drop_all()
         db.create_all()
-        
+    perform_seeding(app)
+
+def perform_seeding(app):
+    with app.app_context():
         # Load db.json
         frontend_db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'nyxvault', 'db.json'))
         if not os.path.exists(frontend_db_path):
